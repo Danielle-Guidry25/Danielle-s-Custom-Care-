@@ -1,2 +1,2 @@
 # Danielle-s-Custom-Care-
- It's an  in-home healthcare webpage that is supposed to give custom in-home healthcare to all 
+ it's a  in home healthcare webpage that suppose to give custom care   in home healthcare to all 
