@@ -1,2 +1,3 @@
-# Danielle-s-Custom-Care-
- It's an  in-home healthcare webpage that is supposed to give custom   in-home healthcare to all 
+# Danielle's Custom Care
+
+Danielle's Custom Care is an in-home healthcare webpage designed to provide personalized and tailored care to meet your unique needs. Our goal is to deliver high-quality, customized care services to ensure comfort and satisfaction for all our clients.
