@@ -7,13 +7,13 @@
     <title>Danielle's Custom Care</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external stylesheet -->
-    <script src="script.js" defer></script> <!-- Link to the external JavaScript file -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body class="bg-light">
     <header class="bg-primary text-white text-center py-4">
-        <h1>Welcome to Danielle's Custom Care</h1> <!-- Main header string -->
+        <h1>Welcome to Danielle's Custom Care</h1>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -22,10 +22,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li> <!-- About Us link -->
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <!-- Services link -->
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> <!-- Contact link -->
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -33,21 +32,58 @@
     </header>
     <main class="container my-5">
         <section id="about" class="mb-5">
-            <h2 class="text-center">About Us</h2> <!-- About Us section header -->
+            <h2 class="text-center">About Us</h2>
             <p class="text-center">We provide personalized care services tailored to your needs.</p>
-            <!-- About Us description -->
             <div class="text-center">
                 <img src="https://www.heartofcaregiving.com/wp-content/uploads/2023/06/HOC-Logo1-e1687376384445.png"
-                    alt="Heart of Caregiving Logo" class="img-fluid rounded"> <!-- Added image -->
+                    alt="Heart of Caregiving Logo" class="img-fluid rounded">
             </div>
         </section>
         <section id="services" class="mb-5">
             <h2 class="text-center">Our Services</h2>
             <ul class="list-group">
-                <li class="list-group-item">Custom Care Plans</li>
-                <li class="list-group-item">24/7 Support</li>
-                <li class="list-group-item">Professional Staff</li>
-                <li class="list-group-item">Personalized Custom Attention</li>
+                <li class="list-group-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle w-100 text-start" type="button" id="customCareDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Custom Care Plans
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="customCareDropdown">
+                            <li><a class="dropdown-item" href="#">We tailor our care to your needs</a></li>
+                            <li><a class="dropdown-item" href="#">Flexible scheduling</a></li>
+                            <li><a class="dropdown-item" href="#">Personalized attention</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle w-100 text-start" type="button" id="supportDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            24/7 Support
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="supportDropdown">
+                            <li><a class="dropdown-item" href="#">We will be at your service 24/7</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle w-100 text-start" type="button" id="professionalStaffDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Professional Staff
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="professionalStaffDropdown">
+                            <li><a class="dropdown-item" href="#">We have certified professionals 24/7 to meet your needs that fit your care</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle w-100 text-start" type="button" id="customAttentionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Personalized Custom Attention
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="customAttentionDropdown">
+                            <li><a class="dropdown-item" href="#">We provide personalized custom attention to each client</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </section>
         <section id="contact" class="mb-5">
@@ -69,12 +105,15 @@
                         required></textarea>
                 </div>
                 <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary">Send</button>
+                    <button type="submit" class="btn btn-primary" data-bs-toggle="tooltip" title="Thank you, your message was sent">
+                        <hover>Send Message</hover>
+                       <s class="visually-hidden">Send Message</s>
+                    </button>
                 </div>
             </form>
         </section>
     </main>
-    <footer class="bg-darkblue text-mintgreen text-center py-3">
+    <footer class="bg-dark text-light text-center py-3">
         <p>&copy; 2025 Danielle's Custom Care. All rights reserved.</p>
         <p>Follow us on:
             <a href="https://facebook.com" target="_blank" rel="noopener" class="text-mintgreen">Facebook</a> |
