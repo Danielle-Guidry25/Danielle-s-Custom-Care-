@@ -41,10 +41,13 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ffffff; /* Change text color to white on hover */
+  transform: scale(1.1); /* Slightly enlarge the text on hover */
+  text-decoration: underline; /* Add underline on hover */
 }
 
 /* Main Content */
@@ -70,7 +73,7 @@ footer {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  background: blue; /* Blue background */
+  background: #1c6c83; /* Blue background */
   color: #98ff98; /* Mint green text */
   font-size: 0.9rem;
 }
@@ -82,4 +85,99 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Hover Effects for List Items */
+.list-group-item:first-child:hover {
+  background-color: hsl(189, 50%, 50%); /* Dark green background on hover */
+  color: #ffffff; /* White text on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hover Effect for 24/7 Support */
+.list-group-item:nth-child(2):hover {
+  background-color: hsl(189, 50%, 50%); /* Dark red background on hover */
+  color: #ffffff; /* White text on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hover Effect for Professional Staff */
+.list-group-item:nth-child(3):hover {
+  background-color: hsl(189, 50%, 50%); /* Dark blue background on hover */
+  color: #ffffff; /* White text on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hover Effect for Personalized Custom Attention */
+.list-group-item:nth-child(4):hover {
+  background-color: hsl(189, 50%, 50%); /* Golden yellow background on hover */
+  color: #ffffff; /* White text on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Button Styling */
+btn {
+  background-color: hsl(189, 50%, 50%); /* Dark green background */
+  color: hsl(235, 73%, 31%); /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Popup Styling */
+.popup {
+  width: 400px;
+  background: #ffffff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 30px;
+  color: #32a3c2;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.openpopup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Popup Image Styling */
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px hsla(175, 56%, 49%, 0.102);
+}
+
+/* Popup Heading Styling */
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+  color: hsl(189, 50%, 50%); /* Example property: Set text color */
+}
+
+/* Popup Button Styling */
+.popup button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: hsl(189, 50%, 50%); /* Dark green background */
+  color: #ffffff; /* White text */
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Change cursor to pointer */
 }
